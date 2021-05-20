@@ -14,13 +14,19 @@ public static class GameComponentsLookup {
     public const int Data = 3;
     public const int DebugLog = 4;
     public const int Hero = 5;
-    public const int Position = 6;
-    public const int Speed = 7;
-    public const int Sprite = 8;
-    public const int Velocity = 9;
-    public const int View = 10;
+    public const int isDropped = 6;
+    public const int Item = 7;
+    public const int ItemInBag = 8;
+    public const int ItemIndex = 9;
+    public const int Position = 10;
+    public const int Skill = 11;
+    public const int SkillIndex = 12;
+    public const int Speed = 13;
+    public const int Sprite = 14;
+    public const int Velocity = 15;
+    public const int View = 16;
 
-    public const int TotalComponents = 11;
+    public const int TotalComponents = 17;
 
     public static readonly string[] componentNames = {
         "CharacterGender",
@@ -29,7 +35,13 @@ public static class GameComponentsLookup {
         "Data",
         "DebugLog",
         "Hero",
+        "isDropped",
+        "Item",
+        "ItemInBag",
+        "ItemIndex",
         "Position",
+        "Skill",
+        "SkillIndex",
         "Speed",
         "Sprite",
         "Velocity",
@@ -43,7 +55,13 @@ public static class GameComponentsLookup {
         typeof(DataComponent),
         typeof(DebugLogComponent),
         typeof(HeroComponent),
+        typeof(isDroppedComponent),
+        typeof(ItemComponent),
+        typeof(ItemInBagComponent),
+        typeof(ItemIndexComponent),
         typeof(PositionComponent),
+        typeof(SkillComponent),
+        typeof(SkillIndexComponent),
         typeof(SpeedComponent),
         typeof(SpriteComponent),
         typeof(VelocityComponent),

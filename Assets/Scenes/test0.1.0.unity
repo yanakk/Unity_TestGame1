@@ -1982,6 +1982,7 @@ GameObject:
   - component: {fileID: 192060968}
   - component: {fileID: 192060967}
   - component: {fileID: 192060971}
+  - component: {fileID: 192060973}
   - component: {fileID: 192060972}
   m_Layer: 5
   m_Name: Canvas
@@ -2079,12 +2080,28 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 192060966}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 01fa8117974c4404e8f8efa4e8647d97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   myBag: {fileID: 11400000, guid: a21fc31fecb5b02449f14e3f92df2263, type: 2}
+  slotGrid: {fileID: 1467155574}
+  slotPrefab: {fileID: 2191904651075404586, guid: 3b3296da076478f4da53c010f050f379,
+    type: 3}
+  itemInformation: {fileID: 1397652828}
+--- !u!114 &192060973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 192060966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 081fe02dbc8c6694a8be4aef36bb7174, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   slotGrid: {fileID: 1467155574}
   slotPrefab: {fileID: 2191904651075404586, guid: 3b3296da076478f4da53c010f050f379,
     type: 3}

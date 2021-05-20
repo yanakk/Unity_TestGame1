@@ -68,7 +68,13 @@
     <Compile Include="Assets\Generated\Game\Components\GameDataComponent.cs" />
     <Compile Include="Assets\Generated\Game\Components\GameDebugLogComponent.cs" />
     <Compile Include="Assets\Generated\Game\Components\GameHeroComponent.cs" />
+    <Compile Include="Assets\Generated\Game\Components\GameisDroppedComponent.cs" />
+    <Compile Include="Assets\Generated\Game\Components\GameItemComponent.cs" />
+    <Compile Include="Assets\Generated\Game\Components\GameItemInBagComponent.cs" />
+    <Compile Include="Assets\Generated\Game\Components\GameItemIndexComponent.cs" />
     <Compile Include="Assets\Generated\Game\Components\GamePositionComponent.cs" />
+    <Compile Include="Assets\Generated\Game\Components\GameSkillComponent.cs" />
+    <Compile Include="Assets\Generated\Game\Components\GameSkillIndexComponent.cs" />
     <Compile Include="Assets\Generated\Game\Components\GameSpeedComponent.cs" />
     <Compile Include="Assets\Generated\Game\Components\GameSpriteComponent.cs" />
     <Compile Include="Assets\Generated\Game\Components\GameVelocityComponent.cs" />
@@ -109,6 +115,11 @@
     <Compile Include="Assets\source\Systems\GameController.cs" />
     <Compile Include="Assets\source\Systems\HeroInitSystem.cs" />
     <Compile Include="Assets\source\Systems\HeroSystem.cs" />
+    <Compile Include="Assets\source\Systems\Inventory\BagManager.cs" />
+    <Compile Include="Assets\source\Systems\Inventory\DropItemSystem.cs" />
+    <Compile Include="Assets\source\Systems\Inventory\ItemCollisionSystem.cs" />
+    <Compile Include="Assets\source\Systems\Inventory\ItemInitSystem.cs" />
+    <Compile Include="Assets\source\Systems\Inventory\ItemSystems.cs" />
     <Compile Include="Assets\source\Systems\MoveControllerSystem.cs" />
     <Compile Include="Assets\source\Systems\MoveSystem.cs" />
     <Compile Include="Assets\source\Systems\NameGenerateSystem.cs" />
@@ -117,6 +128,7 @@
     <Compile Include="Assets\source\Systems\RandomNameInitSystem.cs" />
     <Compile Include="Assets\source\Systems\RenderPositionSystem.cs" />
     <Compile Include="Assets\source\Systems\RenderSpriteSystem.cs" />
+    <Compile Include="Assets\source\Systems\Skill\SkillSystems.cs" />
     <Compile Include="Assets\source\Systems\ViewSystems.cs" />
     <None Include="Assets\Resources\family_names.txt" />
     <None Include="Assets\Resources\prohibited.txt" />
@@ -124,7 +136,9 @@
     <None Include="Assets\Backyard - Free\Readme.txt" />
     <None Include="Assets\Libraries\Entitas\Entitas.xml" />
     <None Include="Assets\Libraries\Entitas\LICENSE.txt" />
+    <None Include="Assets\Resources\dataname0503.txt" />
     <None Include="Assets\Resources\given_names_m.txt" />
+    <None Include="Assets\Resources\datatype0503.txt" />
     <None Include="Assets\All Assets\FreePixelGear\ReadMe.txt" />
     <None Include="Assets\Resources\backup.txt" />
     <Reference Include="UnityEngine.Purchasing">

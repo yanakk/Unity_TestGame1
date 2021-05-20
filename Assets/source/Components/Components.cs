@@ -49,6 +49,43 @@ public sealed class DataComponent : IComponent
 }
 
 [Game]
+public sealed class ItemComponent : IComponent
+{
+    public string name;
+}
+
+[Game]
+public sealed class isDroppedComponent : IComponent
+{
+    public bool isdrop; //  装备是否为暴露在地图中的可拾取状态
+}
+
+[Game]
+public sealed class ItemInBagComponent : IComponent
+{
+    public List<Vector2> ItemInBagList; // c_id, i_id
+    public List<int> AmountList; // amount
+}
+
+[Game]
+public sealed class ItemIndexComponent : IComponent
+{
+    public int id;
+}
+
+[Game]
+public sealed class SkillIndexComponent : IComponent
+{
+    public int id;
+}
+
+[Game]
+public sealed class SkillComponent : IComponent
+{
+    public string name;
+}
+
+[Game]
 public sealed class CharacterIndexComponent : IComponent
 {
     public int id;  // 0-player

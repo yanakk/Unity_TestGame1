@@ -21,7 +21,7 @@ public class AddViewSystem : ReactiveSystem<GameEntity>
 
     protected override bool Filter(GameEntity entity)
     {
-        return entity.hasSprite && !entity.hasView;
+        return entity.hasSprite && !entity.hasView && entity.hasHero;
     }
 
     protected override void Execute(List<GameEntity> entities)
@@ -32,7 +32,13 @@ public class AddViewSystem : ReactiveSystem<GameEntity>
             go.transform.SetParent(_viewContainer, false);
             e.AddView(go);
             go.Link(e);
-            
+            go.tag = "Player";
+
+            BoxCollider2D bc = go.GetComponent<BoxCollider2D>();
+            if (bc == null) bc = go.AddComponent<BoxCollider2D>();
+            Rigidbody2D rb = go.GetComponent<Rigidbody2D>();
+            if (rb == null) rb = go.AddComponent<Rigidbody2D>();
+            rb.gravityScale = 0;
         }
     }
 }
